@@ -8,7 +8,7 @@
       <ul class="nav">
         <template v-for="item in headerList">
           <li>
-            <a>{{ item.name }}</a>
+            <a @click="onRouterCLick(item.url)">{{ item.name }}</a>
           </li>
         </template>
       </ul>
@@ -20,8 +20,8 @@ export default {
   data() {
     return {
       headerList: [
-        {name: "회사소개", url: "intro"},
-        {name: "사업영역", url: "area"},
+        {name: "회사소개", url: "/"},
+        {name: "사업영역", url: "about"},
         {name: "특장점", url: "merit"},
         {name: "행사지원", url: "resource"},
         {name: "오시는길", url: "way"}
@@ -29,8 +29,8 @@ export default {
     }
   },
   methods: {
-    onLinkCLick() {
-
+    onRouterCLick(url) {
+      this.$router.push({ path: url })
     }
   },
 }
@@ -71,7 +71,7 @@ export default {
 
   .nav {
     li {
-      float: right;
+      float: left;
 
       a {
         cursor: pointer;

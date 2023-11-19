@@ -1,20 +1,21 @@
 <template>
   <div class="page__wrap">
     <div class="page__section">
-      <div class="view">
-        홈페이지
-      </div>
+      <HomeCarousel></HomeCarousel>
     </div>
   </div>
 </template>
 <script>
+import HomeCarousel from "@/components/carousels/HomeCarousel.vue"
 export default {
-
+  components: {
+    HomeCarousel
+  }
 }
 </script>
 <style lang="scss" scoped>
 .page__wrap {
+  margin-top: 116px;
   width: 100%;
-  height: 1000px;
 }
 </style>
