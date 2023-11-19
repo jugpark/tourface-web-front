@@ -24,7 +24,7 @@ export default {
       settings: {
         dots: true,
         infinite: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 5000
       },
       details: CAROUSEL

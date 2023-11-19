@@ -30,7 +30,7 @@ export default {
     top: 30%;
     left: 20%;
     .title {
-      font-family: 'Noto Sans KR', sans-serif;;
+      font-family: 'Noto Sans KR', sans-serif;
       font-size: 60px;
       line-height: 60px;
       color: #2c3e50;

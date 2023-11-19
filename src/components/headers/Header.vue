@@ -75,7 +75,7 @@ export default {
 
       a {
         cursor: pointer;
-        font-family: 'NotoSansM';
+        font-family: 'Noto Sans KR', sans-serif;
         font-size: 20px;
         color: #111111;
         text-align: center;
