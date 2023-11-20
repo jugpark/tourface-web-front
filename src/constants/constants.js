@@ -19,3 +19,11 @@ export const FOOTER_CONTENT = [
     "이메일 : tour@tfnb.co.kr",
     "기타 : FAX : 02-6203-7474"
 ]
+
+export const CONTACT_CONTENT = {
+    tit: "Contact Us",
+    sub: "투어페이스 앤 비즈 대표번호",
+    num: "02-6677-3300",
+    time: "야간, 주말 공휴일 상담시간",
+    tDescription: "주중 야간: 17:00 ~ 익일 08:00  주말, 공휴일: 24시간"
+}

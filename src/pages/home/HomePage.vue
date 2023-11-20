@@ -4,7 +4,7 @@
       <HomeCarousel></HomeCarousel>
     </div>
     <div class="contact">
-      <ContactUs />
+      <WeatherCarousel />
       <ContactUs />
     </div>
   </div>
@@ -12,11 +12,13 @@
 <script>
 import HomeCarousel from "@/components/carousels/HomeCarousel.vue"
 import ContactUs from "@/components/home/ContactUs.vue"
+import WeatherCarousel from "@/components/home/WeatherCarousel.vue";
 
 export default {
   components: {
     HomeCarousel,
-    ContactUs
+    ContactUs,
+    WeatherCarousel
   }
 }
 </script>
