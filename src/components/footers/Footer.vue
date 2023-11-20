@@ -25,8 +25,8 @@ export default {}
   background: #000;
   font-size: 15px;
   color: #333333;
-  position: absolute;
-  bottom: 0;
+  //position: absolute;
+  //bottom: 0;
   text-align: left;
 
   .top {

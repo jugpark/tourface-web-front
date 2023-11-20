@@ -35,5 +35,10 @@ export default {
 <style lang="scss" scoped>
 .carousel__wrap {
   width: 100%;
+  .slick-slider::v-deep {
+    .slick-dots {
+      bottom: 25px !important;
+    }
+  }
 }
 </style>

@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header></Header>
-    <router-view></router-view>
+    <div class="page__wrap">
+      <router-view></router-view>
+    </div>
     <Footer></Footer>
   </div>
 </template>
@@ -16,5 +18,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+.page__wrap {
+  margin-top: 121px;
+  width: 100%;
+  min-height: calc(100vh - 222px);
+  min-width: 1200px;
+}
 </style>

@@ -1,64 +1,35 @@
 <template>
-  <div class="page__wrap">
-    <div class="page__section">
+  <div class="content">
+    <div class="carousel_section">
       <HomeCarousel></HomeCarousel>
-      <div class="contact">
-        <div class="box left">
-          <h3 class="title"></h3>
-          <div class="info">
-            <p class="sub-title"></p>
-            <p class="number"></p>
-            <p class="time"></p>
-            <p class="time-description"></p>
-          </div>
-        </div>
-        <div class="box">
-          <h3 class="title"></h3>
-          <div class="info">
-            <p class="sub-title"></p>
-            <p class="number"></p>
-            <p class="time"></p>
-            <p class="time-description"></p>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="contact">
+      <ContactUs />
+      <ContactUs />
     </div>
   </div>
 </template>
 <script>
 import HomeCarousel from "@/components/carousels/HomeCarousel.vue"
+import ContactUs from "@/components/home/ContactUs.vue"
+
 export default {
   components: {
-    HomeCarousel
+    HomeCarousel,
+    ContactUs
   }
 }
 </script>
 <style lang="scss" scoped>
-.page__wrap {
-  margin-top: 116px;
-  width: 100%;
-  .page__section {
-    .contact {
-      .box {
-        .title {
+.content {
+  .carousel_section {
+    height: 500px;
+  }
 
-        }
-        .info {
-          .sub-title {
-
-          }
-          .number {
-
-          }
-          .time {
-
-          }
-          .time-description {
-
-          }
-        }
-      }
-    }
+  .contact {
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
   }
 }
 </style>

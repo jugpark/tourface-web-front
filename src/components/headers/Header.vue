@@ -71,7 +71,8 @@ export default {
 
   .nav {
     li {
-      float: left;
+      float: right;
+      padding: 0 30px;
 
       a {
         cursor: pointer;
@@ -79,11 +80,24 @@ export default {
         font-size: 20px;
         color: #111111;
         text-align: center;
-        width: 150px;
         display: inline-block;
         padding: 45.5px 0;
         text-decoration: none;
         font-weight: 600;
+        position: relative;
+        &:hover {
+          color: #2c3e50;
+          &::after {
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            bottom: 30px;
+            left: 0;
+            background-color: #2c3e50;
+            content: "";
+          }
+        }
       }
     }
   }

@@ -22,7 +22,7 @@ export default {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 500px;
 
   .content {
     position: absolute;
