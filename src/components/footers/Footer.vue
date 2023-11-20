@@ -3,12 +3,7 @@
     <div class="top">
       <div class="area_link">
         <ul>
-          <li>(주)투어페이스앤비즈</li>
-          <li>김숙진/신미선</li>
-          <li>서울시 강남구 선릉로433 세방빌딩 11층 1103호 </li>
-          <li>전화번호 : 02-6677-3300</li>
-          <li>이메일 : tour@tfnb.co.kr </li>
-          <li>기타 : FAX : 02-6203-7474</li>
+          <li v-for="item of items">{{ item }}</li>
         </ul>
       </div>
       <div class="area_info"></div>
@@ -17,7 +12,15 @@
   </div>
 </template>
 <script>
-export default {}
+import { FOOTER_CONTENT } from "@/constants/constants";
+
+export default {
+  data() {
+    return {
+      items: FOOTER_CONTENT
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 .footer {
