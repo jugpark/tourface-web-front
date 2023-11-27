@@ -2,6 +2,7 @@
   <div class="box">
     <h3 class="title">{{ items.tit }}</h3>
     <div class="info">
+      <i class="icon contact-us"/>
       <p class="sub-title">{{ items.sub }}</p>
       <p class="number">{{ items.num }}</p>
       <p class="time">{{ items.time }}</p>
@@ -10,7 +11,8 @@
   </div>
 </template>
 <script>
-import { CONTACT_CONTENT } from "@/constants/constants";
+import {CONTACT_CONTENT} from "@/constants/constants";
+
 export default {
   data() {
     return {
@@ -22,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 .box {
   width: 550px;
-  border: 1px solid #888888;
+  border: 1px solid #d1d1d1;
 
   .title {
     border-bottom: 1px solid #d1d1d1;
@@ -33,8 +35,16 @@ export default {
   }
 
   .info {
+    position: relative;
     padding: 30px;
     text-align: left;
+
+    .contact-us {
+      position: absolute;
+      top: 60px;
+      right: 60px;
+    }
+
     .sub-title {
       font-size: 14px;
       line-height: 1.65;
@@ -47,6 +57,7 @@ export default {
       font-weight: 500;
       color: #00b69f;
       margin: 10px 0;
+
       &::after {
         position: absolute;
         display: inline-block;

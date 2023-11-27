@@ -5,9 +5,14 @@ export const CAROUSEL = [
         description: "고객 중심시스템을 통해 <br> 새로운 기업 서비스를 경험해 보십시오. <br> 귀사의 성공적인 비즈니스를 위한 최고의 파트너가 되겠습니디.",
     },
     {
-        title: "Tourface & Biz",
-        subtitle: "The Best Global VIP Premium Service",
-        description: "고객 중심시스템을 통해 <br> 새로운 기업 서비스를 경험해 보십시오. <br> 귀사의 성공적인 비즈니스를 위한 최고의 파트너가 되겠습니디.",
+        title: "긴급상황 대처 <br>24시간 항공예약 및 변경",
+        subtitle: "24Hours Care Service for Emergency Situation",
+        description: "긴급 상황시 인천공항 내 상주직원의 <br> 발빠른 상황 대처를 통해 항공권 예약 및 변경 등 <br> 폭 넓은 서비스를 상시 제공합니다.",
+    },
+    {
+        title: "성공적인 해외 비즈니스 출장",
+        subtitle: "Successful Business Travel",
+        description: "긴급 상황시 인천공항 내 상주직원의 <br> 발빠른 상황 대처를 통해 항공권 예약 및 변경 등 <br> 폭 넓은 서비스를 상시 제공합니다.",
     }
 ];
 

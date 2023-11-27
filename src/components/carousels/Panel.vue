@@ -1,8 +1,8 @@
 <template>
   <div class="panel">
     <div class="content">
-      <h3 class="title">{{ detail.title }}</h3>
-      <span class="sub-title">{{ detail.subtitle }}</span>
+      <h3 class="title" v-html="detail.title"></h3>
+      <span class="sub-title" v-html="detail.subtitle"></span>
       <p class="description" v-html="detail.description"></p>
     </div>
   </div>

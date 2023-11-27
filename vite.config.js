@@ -13,6 +13,17 @@ export default defineConfig({
             additionalLegacyPolyfills: ['regenerator-runtime/runtime']
         })
     ],
+    server: {
+        proxy: {
+            '/api': {
+                target: 'https://www.koreaexim.go.kr',
+                changeOrigin: true,
+                rewrite: (path) => path.replace(/^\/api/, ''),
+                secure: false,
+                ws: true
+            }
+        }
+    },
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))

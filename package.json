@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@egjs/vue-flicking": "^4.11.1",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
     "vue": "^2.7.7",
     "vue-router": "^3.6.5",
     "vue-slick-carousel": "^1.0.6"

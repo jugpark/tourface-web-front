@@ -21,10 +21,10 @@ export default {
     return {
       headerList: [
         {name: "회사소개", url: "/"},
-        {name: "사업영역", url: "about"},
-        {name: "특장점", url: "merit"},
-        {name: "행사지원", url: "resource"},
-        {name: "오시는길", url: "way"}
+        // {name: "사업영역", url: "about"},
+        // {name: "특장점", url: "merit"},
+        // {name: "행사지원", url: "resource"},
+        // {name: "오시는길", url: "way"}
       ]
     }
   },
