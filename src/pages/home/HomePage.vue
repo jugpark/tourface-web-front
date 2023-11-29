@@ -20,7 +20,7 @@
 import HomeCarousel from "@/components/carousels/HomeCarousel.vue"
 import ContactUs from "@/components/home/ContactUs.vue"
 import ExchangeRate from "@/components/home/ExchangeRate.vue";
-import WeatherCarousel from "@/components/home/WeatherCarousel.vue";
+import WeatherCarousel from "@/components/home/Announcement.vue";
 import {getExchangeRate} from "@/api/ExchangeRate";
 
 export default {
