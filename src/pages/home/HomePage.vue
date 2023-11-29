@@ -81,7 +81,6 @@ export default {
 
     .contact {
       display: flex;
-      justify-content: space-between;
     }
 
     .exchange {

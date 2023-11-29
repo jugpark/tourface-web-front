@@ -1,5 +1,5 @@
 <template>
-  <div class="panel">
+  <div class="panel" :style="{ backgroundImage: `url('/src/assets/carousel-${index}.jpg')`}">
     <div class="content">
       <h3 class="title" v-html="detail.title"></h3>
       <span class="sub-title" v-html="detail.subtitle"></span>
@@ -10,7 +10,8 @@
 <script>
 export default {
   props: [
-      "detail"
+      "detail",
+      "index"
   ]
 }
 </script>
@@ -28,12 +29,12 @@ export default {
     position: absolute;
     text-align: left;
     top: 30%;
-    left: 20%;
+    left: 15%;
     .title {
       font-family: 'Noto Sans KR', sans-serif;
       font-size: 60px;
       line-height: 60px;
-      color: #2c3e50;
+      color: #ffffff;
       margin-bottom: 50px;
     }
 
