@@ -1,5 +1,5 @@
 <template>
-  <div class="panel" :style="{ backgroundImage: `url('/src/assets/carousel-${index}.jpg')`}">
+  <div class="panel" :style="{ backgroundImage: `url('/assets/carousel-${index}.jpg')`}">
     <div class="content">
       <h3 class="title" v-html="detail.title"></h3>
       <span class="sub-title" v-html="detail.subtitle"></span>
