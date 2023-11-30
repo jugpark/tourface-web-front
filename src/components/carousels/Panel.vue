@@ -1,5 +1,5 @@
 <template>
-  <div class="panel">
+  <div class="panel" :class="indexParser">
     <div class="content">
       <h3 class="title" v-html="detail.title"></h3>
       <span class="sub-title" v-html="detail.subtitle"></span>
@@ -12,18 +12,37 @@ export default {
   props: [
       "detail",
       "index"
-  ]
+  ],
+  computed: {
+    indexParser() {
+      if (this.index === 1) {
+        return "first"
+      } else if (this.index === 2) {
+        return "second"
+      } else {
+        return "third"
+      }
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
 .panel {
   position: relative;
-  background-image: url("@/assets/carousel0.jpg");
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 500px;
+  &.first {
+    background-image: url("@/assets/carousel0.jpg");
+  }
+  &.second {
+    background-image: url("@/assets/carousel1.jpg");
+  }
+  &.third {
+    background-image: url("@/assets/carousel2.jpg");
+  }
 
   .content {
     position: absolute;
