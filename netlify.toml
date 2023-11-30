@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/proxy/*"
+  to = "https://www.koreaexim.go.kr/api/site/program/financial/exchangeJSON"
+  status = 200
+  force = true
