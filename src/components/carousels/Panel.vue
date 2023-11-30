@@ -1,5 +1,5 @@
 <template>
-  <div class="panel" :style="{ backgroundImage: `url('/src/assets/carousel${index}.jpg')`}">
+  <div class="panel">
     <div class="content">
       <h3 class="title" v-html="detail.title"></h3>
       <span class="sub-title" v-html="detail.subtitle"></span>
@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 .panel {
   position: relative;
-  background-image: url("@/assets/airplane.jpg");
+  background-image: url("@/assets/carousel0.jpg");
   width: 100%;
   background-size: cover;
   background-position: center;
