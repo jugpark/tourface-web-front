@@ -15,9 +15,9 @@ export default {
   ],
   computed: {
     indexParser() {
-      if (this.index === 1) {
+      if (this.index === 0) {
         return "first"
-      } else if (this.index === 2) {
+      } else if (this.index === 1) {
         return "second"
       } else {
         return "third"
