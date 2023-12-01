@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const PROXY = window.location.hostname === 'localhost' ? '/api/site/program/financial/exchangeJSON' : '/proxy/';
+const PROXY = window.location.hostname === 'localhost' ? '/api/site/program/financial/exchangeJSON' : '/proxy';
 
 export async function getExchangeRate () {
     const authkey = "9NIQpTa23qxxlYsKcOsfB2IF2zNngokx";
