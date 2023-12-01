@@ -9,6 +9,7 @@ export async function getExchangeRate () {
     const baseURL = `${PROXY}/site/program/financial/exchangeJSON?authkey=${authkey}&searchdate=${searchdate}&data=${data}`;
     let result;
     await axios.get(baseURL).then(res => {
+        console.log(res)
         result = res.data
     })
     return result;
