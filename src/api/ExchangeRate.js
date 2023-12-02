@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
+const PROXY = window.location.hostname === 'localhost' ? '/api' : '/proxy';
 
 export async function getExchangeRate () {
     const headers = { "Content-Type": "application/json" }
@@ -8,7 +8,7 @@ export async function getExchangeRate () {
     const searchdate = getToday();
     const data = "AP01";
     console.log(PROXY)
-    const baseURL = `${PROXY}/api/site/program/financial/exchangeJSON?authkey=${authkey}&searchdate=${searchdate}&data=${data}`;
+    const baseURL = `${PROXY}/site/program/financial/exchangeJSON?authkey=${authkey}&searchdate=${searchdate}&data=${data}`;
     
     let result;
     await axios.get(baseURL, {headers}).then(res => {
