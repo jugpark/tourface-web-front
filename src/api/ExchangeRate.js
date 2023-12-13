@@ -3,7 +3,7 @@ import axios from "axios";
 const PROXY = window.location.hostname === 'localhost' ? '/api' : '/proxy';
 
 export async function getExchangeRate () {
-    const headers = { "Content-Type": "application/json" }
+    // const headers = { "Content-Type": "application/json" }
     const authkey = "9NIQpTa23qxxlYsKcOsfB2IF2zNngokx";
     const searchdate = getToday();
     const data = "AP01";
@@ -11,14 +11,14 @@ export async function getExchangeRate () {
     const baseURL = `${PROXY}/site/program/financial/exchangeJSON?authkey=${authkey}&searchdate=${searchdate}&data=${data}`;
     
     let result;
-    await axios.get(baseURL, {headers}).then(res => {
+    await axios.get(baseURL).then(res => {
         console.log(res)
         result = res.data
     })
     return result;
 }
 
-function getToday(){
+function getToday() {
     let date = new Date();
     let year = date.getFullYear();
     let month = ("0" + (1 + date.getMonth())).slice(-2);
