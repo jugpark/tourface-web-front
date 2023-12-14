@@ -18,11 +18,29 @@ export const CAROUSEL = [
 
 export const FOOTER_CONTENT = [
     "(주)투어페이스앤비즈",
-    "김숙진/신미선",
-    "(주)서울시 강남구 선릉로433 세방빌딩 11층 1103호",
+    "신미선",
+    "(주)서울시 강남구 테헤란로 313, 509호",
     "전화번호 : 02-6677-3300",
     "이메일 : tour@tfnb.co.kr",
     "기타 : FAX : 02-6203-7474"
+]
+
+export const PARTNER_INFO = [
+    {
+        num: "180",
+        title: "Airlines",
+        desc: "전세계 108여개의 항공사 예약 . 발권 가능 <br> (대한항공, 아시아나항공, 전세계 외항사 등)"
+    },
+    {
+        num: "600000",
+        title: "Hotels",
+        desc: "20여 개의 해외 호텔 에이전트 및 전 세계  <br> 수천 곳의 호텔과 상용 계약 체결"
+    },
+    {
+        num: "200",
+        title: "Service",
+        desc: "세계 각국의 현지 협력사와, 긴밀한협조체계를 구축하여 Global Network를 구현하고 해외 행사의 성공적인 진행을 위해 최상의 Service를 제공합니다"
+    }
 ]
 
 export const CONTACT_CONTENT = {
