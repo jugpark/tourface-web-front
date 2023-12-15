@@ -46,8 +46,6 @@ export default {
   left: 0;
   right: 0;
   z-index: 10;
-  transition: background 0.3s;
-  zoom: 1;
   .gnb {
     padding: 0 100px;
   }

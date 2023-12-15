@@ -19,9 +19,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .page__wrap {
-  margin-top: 116px;
+  margin-top: 121px;
   width: 100%;
-  min-height: calc(100vh - 222px);
-  min-width: 1200px;
+  min-height: calc(100vh - 217px);
+  min-width: 1225px;
 }
 </style>

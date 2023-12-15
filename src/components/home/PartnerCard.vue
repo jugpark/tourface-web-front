@@ -19,6 +19,7 @@ export default {
     background-color: #fff;
     width: 300px;
     padding: 50px 20px !important;
+    margin: 0 10px;
 
     .title__wrap {
         display: flex;

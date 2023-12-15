@@ -114,7 +114,7 @@ export default {
 
     .partner__wrap {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
     }
   }
 }
