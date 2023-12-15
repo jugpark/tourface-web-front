@@ -3,7 +3,6 @@
     <div class="gnb">
       <h2 class="logo">
         <i class="icon main-icon"></i>
-        <a>TourFace & Biz</a>
       </h2>
       <ul class="nav">
         <template v-for="item in headerList">
@@ -47,10 +46,10 @@ export default {
   right: 0;
   z-index: 10;
   .gnb {
-    padding: 0 100px;
+    padding: 0 80px;
   }
   .logo {
-    padding: 40px 0;
+    padding: 30px 0;
     cursor: pointer;
     float: left;
     display: flex;

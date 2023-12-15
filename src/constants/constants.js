@@ -18,7 +18,7 @@ export const CAROUSEL = [
 
 export const FOOTER_CONTENT = [
     "(주)투어페이스앤비즈",
-    "신미선",
+    "대표이사: 신미선",
     "(주)서울시 강남구 테헤란로 313, 509호",
     "전화번호 : 02-6677-3300",
     "이메일 : tour@tfnb.co.kr",
